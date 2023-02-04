@@ -1,0 +1,111 @@
+# serial encoding
+qsub -o /home/shaker.khandaker/results/outputs/serial/encoding/1000_words.csv 01_huff_enc_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/encoding/10000_words.csv 01_huff_enc_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/encoding/10000000_words.csv 01_huff_enc_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/encoding/50000000_words.csv 01_huff_enc_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/encoding/100000000_words.csv 01_huff_enc_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/encoding/200000000_words.csv 01_huff_enc_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/encoding/300000000_words.csv 01_huff_enc_300000000.sh
+
+# serial decoding
+qsub -o /home/shaker.khandaker/results/outputs/serial/decoding/1000_words.csv 01_huff_dec_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/decoding/10000_words.csv 01_huff_dec_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/decoding/10000000_words.csv 01_huff_dec_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/decoding/50000000_words.csv 01_huff_dec_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/decoding/100000000_words.csv 01_huff_dec_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/decoding/200000000_words.csv 01_huff_dec_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/serial/decoding/300000000_words.csv 01_huff_dec_300000000.sh
+
+
+# 10core encoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/encoding/1000_words.csv 10_huff_enc_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/encoding/10000_words.csv 10_huff_enc_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/encoding/10000000_words.csv 10_huff_enc_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/encoding/50000000_words.csv 10_huff_enc_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/encoding/100000000_words.csv 10_huff_enc_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/encoding/200000000_words.csv 10_huff_enc_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/encoding/300000000_words.csv 10_huff_enc_300000000.sh
+
+# 10core decoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/decoding/1000_words.csv 10_huff_dec_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/decoding/10000_words.csv 10_huff_dec_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/decoding/10000000_words.csv 10_huff_dec_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/decoding/50000000_words.csv 10_huff_dec_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/decoding/100000000_words.csv 10_huff_dec_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/decoding/200000000_words.csv 10_huff_dec_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/10core/decoding/300000000_words.csv 10_huff_dec_300000000.sh
+
+# 20core encoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/encoding/1000_words.csv 20_huff_enc_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/encoding/10000_words.csv 20_huff_enc_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/encoding/10000000_words.csv 20_huff_enc_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/encoding/50000000_words.csv 20_huff_enc_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/encoding/100000000_words.csv 20_huff_enc_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/encoding/200000000_words.csv 20_huff_enc_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/encoding/300000000_words.csv 20_huff_enc_300000000.sh
+
+# 20core decoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/decoding/1000_words.csv 20_huff_dec_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/decoding/10000_words.csv 20_huff_dec_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/decoding/10000000_words.csv 20_huff_dec_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/decoding/50000000_words.csv 20_huff_dec_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/decoding/100000000_words.csv 20_huff_dec_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/decoding/200000000_words.csv 20_huff_dec_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/20core/decoding/300000000_words.csv 20_huff_dec_300000000.sh
+
+# 40core encoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/encoding/1000_words.csv 40_huff_enc_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/encoding/10000_words.csv 40_huff_enc_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/encoding/10000000_words.csv 40_huff_enc_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/encoding/50000000_words.csv 40_huff_enc_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/encoding/100000000_words.csv 40_huff_enc_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/encoding/200000000_words.csv 40_huff_enc_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/encoding/300000000_words.csv 40_huff_enc_300000000.sh
+
+# 40core decoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/decoding/1000_words.csv 40_huff_dec_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/decoding/10000_words.csv 40_huff_dec_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/decoding/10000000_words.csv 40_huff_dec_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/decoding/50000000_words.csv 40_huff_dec_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/decoding/100000000_words.csv 40_huff_dec_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/decoding/200000000_words.csv 40_huff_dec_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/40core/decoding/300000000_words.csv 40_huff_dec_300000000.sh
+
+
+# 50core encoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/encoding/1000_words.csv 50_huff_enc_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/encoding/10000_words.csv 50_huff_enc_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/encoding/10000000_words.csv 50_huff_enc_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/encoding/50000000_words.csv 50_huff_enc_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/encoding/100000000_words.csv 50_huff_enc_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/encoding/200000000_words.csv 50_huff_enc_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/encoding/300000000_words.csv 50_huff_enc_300000000.sh
+
+# 50core decoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/decoding/1000_words.csv 50_huff_dec_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/decoding/10000_words.csv 50_huff_dec_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/decoding/10000000_words.csv 50_huff_dec_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/decoding/50000000_words.csv 50_huff_dec_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/decoding/100000000_words.csv 50_huff_dec_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/decoding/200000000_words.csv 50_huff_dec_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/50core/decoding/300000000_words.csv 50_huff_dec_300000000.sh
+
+
+
+# 100core encoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/encoding/1000_words.csv 100_huff_enc_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/encoding/10000_words.csv 100_huff_enc_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/encoding/10000000_words.csv 100_huff_enc_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/encoding/50000000_words.csv 100_huff_enc_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/encoding/100000000_words.csv 100_huff_enc_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/encoding/200000000_words.csv 100_huff_enc_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/encoding/300000000_words.csv 100_huff_enc_300000000.sh
+
+# 100core decoding
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/decoding/1000_words.csv 100_huff_dec_1000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/decoding/10000_words.csv 100_huff_dec_10000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/decoding/10000000_words.csv 100_huff_dec_10000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/decoding/50000000_words.csv 100_huff_dec_50000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/decoding/100000000_words.csv 100_huff_dec_100000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/decoding/200000000_words.csv 100_huff_dec_200000000.sh
+qsub -o /home/shaker.khandaker/results/outputs/parallel/100core/decoding/300000000_words.csv 100_huff_dec_300000000.sh
