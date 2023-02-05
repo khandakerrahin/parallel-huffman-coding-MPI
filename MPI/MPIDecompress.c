@@ -10,7 +10,7 @@ struct huffmanTree *head_huffmanTreeNode;
 struct huffmanTree huffmanTreeNode[512];
 
 int main(int argc, char *argv[]){
-	clock_t start, end;
+	double start, end;
 	unsigned int cpu_time_used;
 	unsigned int rank, numProcesses, numCompressedBlocks, compBlockLength;
 	unsigned int i, j;
@@ -150,7 +150,7 @@ int main(int argc, char *argv[]){
 		// get time
 		// end the total time count.
 		end = MPI_Wtime();
-		totalTime = (double)((end - start));
+		totalTime = (end - start);
 
 		// have each process print its own timings.
 		printf("%d, %.3f\n", rank, totalTime);
