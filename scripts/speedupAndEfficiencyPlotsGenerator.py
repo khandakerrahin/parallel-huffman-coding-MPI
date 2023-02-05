@@ -11,6 +11,7 @@ def calc_efficiency(serial_time, parallel_time, num_procs):
     return serial_time / (parallel_time * num_procs)
 
 num_procs = [1, 2, 4, 8, 16, 32, 64, 128]
+
 problem_size = [1000, 10000, 10000000, 50000000, 100000000, 200000000, 300000000]
 
 # encoding time
@@ -56,6 +57,7 @@ plt.figure(figsize=[10, 5])
 plt.subplot(1, 2, 1)
 for column in speedups_df.columns:
     plt.plot(speedups_df.index, speedups_df[column], label=str(column))
+    plt.xscale('log', base=2)
     plt.xlabel("Number of processors")
     plt.ylabel("Speedup")
     plt.title("Speedup vs Number of processors")
@@ -64,6 +66,7 @@ for column in speedups_df.columns:
 plt.subplot(1, 2, 2)
 for column in efficiencies_df.columns:
     plt.plot(efficiencies_df.index, efficiencies_df[column], label=str(column))
+    plt.xscale('log', base=2)
     plt.xlabel("Number of processors")
     plt.ylabel("Efficiency")
     plt.title("Efficiency vs Number of processors")
@@ -85,22 +88,4 @@ plt.xlabel('Time (s)')
 plt.ylabel('Problem Size')
 plt.title('Huffman Encoding: Performance Comparison of Different cores')
 plt.legend()
-plt.show()
-
-# Plotting the data
-plt.plot(num_procs, serial_times, label='Serial')
-plt.plot(num_procs, parallel_times_02, label='Parallel, 2 processes')
-plt.plot(num_procs, parallel_times_04, label='Parallel, 4 processes')
-plt.plot(num_procs, parallel_times_08, label='Parallel, 8 processes')
-plt.plot(num_procs, parallel_times_16, label='Parallel, 16 processes')
-plt.plot(num_procs, parallel_times_32, label='Parallel, 32 processes')
-plt.plot(num_procs, parallel_times_64, label='Parallel, 64 processes')
-plt.plot(num_procs, parallel_times_128, label='Parallel, 128 processes')
-
-# Adding labels and legend
-plt.xlabel('Number of Processes')
-plt.ylabel('Processing Time (s)')
-plt.legend()
-
-# Show the plot
 plt.show()

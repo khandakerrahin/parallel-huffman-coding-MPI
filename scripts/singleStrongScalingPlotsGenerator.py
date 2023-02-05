@@ -1,14 +1,16 @@
 import matplotlib.pyplot as plt
 
 num_procs = [1, 2, 4, 8, 16, 32, 64, 128]
-times = [25.816, 13.985, 12.952, 5.208, 6.871, 6.784, 7.347, 12.588]
+
+# for file size 6.5MB
+times = [3.941, 2.082, 1.223, 0.861, 2.123, 1.971, 3.263, 4.476]
 
 # Plot the results
 plt.plot(num_procs, times, '-o', label='Result scaling')
 plt.xscale('log', base=2)
 plt.xlabel('Number of Processors')
-plt.ylabel('Execution Time (s)')
-plt.title('Strong Scaling')
+plt.ylabel('Processing Time (s)')
+plt.title('Strong Scaling: 6.5MB file')
 
 # Plot the ideal case of linear scaling
 plt.plot(num_procs, [times[0]/p for p in num_procs], '--', label='Ideal scaling')
