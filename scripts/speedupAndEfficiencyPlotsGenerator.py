@@ -86,3 +86,21 @@ plt.ylabel('Problem Size')
 plt.title('Huffman Encoding: Performance Comparison of Different cores')
 plt.legend()
 plt.show()
+
+# Plotting the data
+plt.plot(num_procs, serial_times, label='Serial')
+plt.plot(num_procs, parallel_times_02, label='Parallel, 2 processes')
+plt.plot(num_procs, parallel_times_04, label='Parallel, 4 processes')
+plt.plot(num_procs, parallel_times_08, label='Parallel, 8 processes')
+plt.plot(num_procs, parallel_times_16, label='Parallel, 16 processes')
+plt.plot(num_procs, parallel_times_32, label='Parallel, 32 processes')
+plt.plot(num_procs, parallel_times_64, label='Parallel, 64 processes')
+plt.plot(num_procs, parallel_times_128, label='Parallel, 128 processes')
+
+# Adding labels and legend
+plt.xlabel('Number of Processes')
+plt.ylabel('Processing Time (s)')
+plt.legend()
+
+# Show the plot
+plt.show()
