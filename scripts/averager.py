@@ -26,6 +26,8 @@ def average_csv_files(directory, csv_files):
 
 def create_averages(parent_dir, codeType):
     problem_size = [1000, 10000, 10000000, 50000000, 100000000, 200000000, 300000000]
+    problem_size = [1000]
+
     serial_times = []
     parallel_times_02 = []
     parallel_times_04 = []
@@ -40,12 +42,13 @@ def create_averages(parent_dir, codeType):
 
     for size in problem_size:
         serial_coding_files  = os.path.join(serial_dir, codeType)
-        serial_files = [f"run_00{i + 1}_{size}_words.csv" for i in range(5)]
+        #serial_files = [f"run_00{i + 1}_{size}_words.csv" for i in range(5)]
+        serial_files = [f"run_00{i + 1}_6.5MB_text.csv" for i in range(1)]
         serial_times.append(average_csv_files(serial_coding_files, serial_files))
 
         parallel_dirs = [os.path.join(parallel_dir, f"{c}core/{codeType}") for c in
                                   ["02", "04", "08", "16", "32", "64", "128"]]
-        parallel_times = [average_csv_files(d, [f"run_00{i + 1}_{size}_words.csv" for i in range(5)]) for d in
+        parallel_times = [average_csv_files(d, [f"run_00{i + 1}_6.5MB_text.csv" for i in range(5)]) for d in
                           parallel_dirs]
         parallel_times_02.append(parallel_times[0])
         parallel_times_04.append(parallel_times[1])

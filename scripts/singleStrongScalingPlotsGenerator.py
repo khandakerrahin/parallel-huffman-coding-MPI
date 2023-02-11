@@ -6,7 +6,7 @@ num_procs = [1, 2, 4, 8, 16, 32, 64, 128]
 # without resource request
 #times = [3.941, 2.082, 1.223, 0.861, 2.123, 1.971, 3.263, 4.476]
 # with resource request
-times = [3.941, 2.174, 1.0870, 1.135, 0.874, 1.317, 1.263, 1.476]
+times = [4.211, 2.1894, 1.3464, 1.2804, 2.8222, 1.8386, 2.6782, 4.4836]
 # Plot the results
 plt.plot(num_procs, times, '-o', label='Result scaling')
 plt.xscale('log', base=2)
