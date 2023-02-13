@@ -36,7 +36,7 @@ mpiexec -n 1 ./shaker_huffman/bin/compress /home/shaker.khandaker/inputFiles/100
 # load modules
 module load valgrind-3.15.0
 module load mpich-3.2
-cd <dir of serial>
+cd <dir of parallel>
 make
 # to encode
 bin/MPI_compress data/input.txt data/input.encoded.bin
